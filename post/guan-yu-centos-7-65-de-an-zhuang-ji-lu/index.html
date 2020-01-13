@@ -1,0 +1,247 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>关于CentOS 7 / 6.5的安装记录 | Kevin的自留地</title>
+<link rel="shortcut icon" href="https://necker14.github.io/favicon.ico?v=1578934789635">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://necker14.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://necker14.github.io">
+  <img class="avatar" src="https://necker14.github.io/images/avatar.png?v=1578934789635" alt="">
+  </a>
+  <h1 class="site-title">
+    Kevin的自留地
+  </h1>
+  <p class="site-description">
+    无聊的碎碎念和一些思考
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              关于CentOS 7 / 6.5的安装记录
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2020-01-13 ·
+              </time>
+              
+                <a href="https://necker14.github.io/tag/lQoSXYFm3" class="post-tag">
+                  # 学习
+                </a>
+              
+                <a href="https://necker14.github.io/tag/Cn990uG-r9" class="post-tag">
+                  # Linux
+                </a>
+              
+            </div>
+            
+              <div class="post-feature-image" style="background-image: url('https://necker14.github.io/post-images/guan-yu-centos-7-65-de-an-zhuang-ji-lu.jpeg')">
+              </div>
+            
+            <div class="post-content">
+              <p><strong>这是Kevin的计算机学习博客记录</strong></p>
+<p>进行虚拟机安装的环境为：<br>
+<em>·Windows 10 专业版<br>
+·VMware Workstation Pro 15.5正式版<br>
+·ISO镜像文件来自学长的分享亦或者来自于网络</em></p>
+<h2 id="首先是centos-7的安装">首先是Centos 7的安装</h2>
+<p>1.准备好ISO镜像文件<br>
+因为提前下载完成，所以这里我把CentOS 7/6.5的ISO都保存到本地了。<br>
+<img src="https://necker14.github.io/post-images/1578930609985.png" alt="" loading="lazy"><br>
+2.来到VMware Workstation Pro 15.5的主页面并新建虚拟机<br>
+<img src="https://necker14.github.io/post-images/1578930729770.png" alt="" loading="lazy"><br>
+3.选择自定义类型的配置方式<br>
+<img src="https://necker14.github.io/post-images/1578930787974.png" alt="" loading="lazy"><br>
+4.使用VMware Workstation Pro 15.X 的硬件兼容性，以确保在Windwos 10系统下获得最佳兼容<br>
+<img src="https://necker14.github.io/post-images/1578930970000.png" alt="" loading="lazy"><br>
+5.我们先不需要在这里选择安装，“让子弹再飞一会儿”<br>
+<img src="https://necker14.github.io/post-images/1578931100735.png" alt="" loading="lazy"><br>
+6.我们因为是安装的CentOS 7，所以需要勾选Linux系统下的CentOS 7子类<br>
+<img src="https://necker14.github.io/post-images/1578931198697.png" alt="" loading="lazy"><br>
+按照提示勾选即可<br>
+<img src="https://necker14.github.io/post-images/1578931211043.png" alt="" loading="lazy"><br>
+7.命名并设置好根目录<br>
+<img src="https://necker14.github.io/post-images/1578931355885.png" alt="" loading="lazy"><br>
+8.在这里可以设置CPU核心数，数值越大性能越好<br>
+<img src="https://necker14.github.io/post-images/1578931465507.png" alt="" loading="lazy"><br>
+9.设置虚拟机内存，一般设置为2-4G，以电脑的内存条内存多大为参考<br>
+<img src="https://necker14.github.io/post-images/1578931534659.png" alt="" loading="lazy"><br>
+10.网络类型设置里，我们一般都会使用NAT类型，NAT类型与原系统分享使用外网IP地址，不需要过多设置<br>
+<img src="https://necker14.github.io/post-images/1578931667459.png" alt="" loading="lazy"></p>
+<hr>
+<p><strong>11.I/O控制器类型以及虚拟磁盘类型都使用软件推荐的类型即可，这里两个直接下一步</strong></p>
+<hr>
+<p>12.磁盘选择创建新的虚拟磁盘<br>
+<img src="https://necker14.github.io/post-images/1578931771820.png" alt="" loading="lazy"><br>
+13.在这里设置磁盘大小，一般情况下40G足够使用<br>
+<img src="https://necker14.github.io/post-images/1578932062487.png" alt="" loading="lazy"><br>
+14.确认好后便可以完成（我这里主要做演示，最终配置可以自行在过程中设置）<br>
+<img src="https://necker14.github.io/post-images/1578932132334.png" alt="" loading="lazy"><br>
+15.在编辑虚拟机设置当中<br>
+<img src="https://necker14.github.io/post-images/1578932272763.png" alt="" loading="lazy"><br>
+找到CD/DVD子类中勾选使用ISO镜像文件，并在本地目录下浏览找到准备好的ISO镜像文件<br>
+<img src="https://necker14.github.io/post-images/1578932333472.png" alt="" loading="lazy"><br>
+16.此时就可以开启虚拟机了！<br>
+<img src="https://necker14.github.io/post-images/1578932481089.png" alt="" loading="lazy"><br>
+按空格开始安装<br>
+17.在语言选择界面，下拉找到中文<br>
+<img src="https://necker14.github.io/post-images/1578932552043.png" alt="" loading="lazy"><br>
+18.在安装信息摘要里，我们主要是：</p>
+<p>·软件选择</p>
+<p><img src="https://necker14.github.io/post-images/1578932628275.png" alt="" loading="lazy"><br>
+<strong>进入软件选择，我们分别勾选GNOME桌面和其子项目栏里的GNOME软件</strong></p>
+<figure data-type="image" tabindex="1"><img src="https://necker14.github.io/post-images/1578932737901.png" alt="" loading="lazy"></figure>
+<p>·安装位置</p>
+<figure data-type="image" tabindex="2"><img src="https://necker14.github.io/post-images/1578932849443.png" alt="" loading="lazy"></figure>
+<p><strong>进入安装位置，确认为自己在虚拟机设置时设置好的虚拟磁盘</strong></p>
+<figure data-type="image" tabindex="3"><img src="https://necker14.github.io/post-images/1578932927853.png" alt="" loading="lazy"></figure>
+<p>·网络和主机名</p>
+<p>在这里只需要打开网络即可</p>
+<figure data-type="image" tabindex="4"><img src="https://necker14.github.io/post-images/1578932998560.png" alt="" loading="lazy"></figure>
+<p>19.开始安装！</p>
+<p>在安装时可以把root密码设置好，也把用户新建好</p>
+<figure data-type="image" tabindex="5"><img src="https://necker14.github.io/post-images/1578933097309.png" alt="" loading="lazy"></figure>
+<hr>
+<figure data-type="image" tabindex="6"><img src="https://necker14.github.io/post-images/1578933145329.png" alt="" loading="lazy"></figure>
+<p>20.至此，我们的CentOS 7就安装完成啦~~</p>
+<p>##然后是CentOS 6.5的安装<br>
+1.因为在VMware Workstation Pro 15.5的设置过程大同小异，只是在系统选择那里需要留意选择CentOS 6即可</p>
+<p>2.我们直接进入系统的安装吧！<br>
+<img src="https://necker14.github.io/post-images/1578933575101.png" alt="" loading="lazy"></p>
+<p>3.在这里，我们选择skip<br>
+<img src="https://necker14.github.io/post-images/1578933646865.png" alt="" loading="lazy"></p>
+<p><strong>紧接着再选择OK</strong></p>
+<p>4.开始啦！<br>
+<img src="https://necker14.github.io/post-images/1578933728738.png" alt="" loading="lazy"></p>
+<p>5.选择好语言和美式键盘<br>
+<img src="https://necker14.github.io/post-images/1578933777478.png" alt="" loading="lazy"></p>
+<p>6.选择基本存储设备<br>
+<img src="https://necker14.github.io/post-images/1578933852660.png" alt="" loading="lazy"></p>
+<p>7.这里选择忽略数据<br>
+<img src="https://necker14.github.io/post-images/1578933913713.png" alt="" loading="lazy"></p>
+<p>8.一路下一步，来到根（root）密码设置界面，填写好密码即可<br>
+<img src="https://necker14.github.io/post-images/1578934129465.png" alt="" loading="lazy"></p>
+<p>9.这里选择替换现有Linux系统安装<br>
+<img src="https://necker14.github.io/post-images/1578934269729.png" alt="" loading="lazy"></p>
+<p>10.这里选择将修改写入磁盘<br>
+<img src="https://necker14.github.io/post-images/1578934310089.png" alt="" loading="lazy"></p>
+<p>11.接下来确保两个画红圈的是否勾选成功<br>
+<img src="https://necker14.github.io/post-images/1578934374942.png" alt="" loading="lazy"></p>
+<p>12.和上面的一样，确保两个红圈中是否勾选成功<br>
+<img src="https://necker14.github.io/post-images/1578934434460.png" alt="" loading="lazy"></p>
+<p>13.接下来就开始正式安装了<br>
+<img src="https://necker14.github.io/post-images/1578934484786.png" alt="" loading="lazy"></p>
+<p>##至此，CentOS 7 / 6.5均已完成</p>
+
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://necker14.github.io/post/chen-mo">
+              <h3 class="post-title">
+                Do happy don&#39;t worry
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'fa68a83a2b1813e6834b',
+    clientSecret: '44f62cc34781aa28265a9a2c646c3197af9a5d1c',
+    repo: 'necker14.github.io',
+    owner: 'necker14',
+    admin: ['necker14'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Kevin的自留地 | 
+  <a class="rss" href="https://necker14.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
