@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://necker14.github.io</id>
     <title>Kevin的自留地</title>
-    <updated>2020-01-28T14:53:08.333Z</updated>
+    <updated>2020-02-03T05:44:43.386Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://necker14.github.io"/>
     <link rel="self" href="https://necker14.github.io/atom.xml"/>
@@ -11,6 +11,83 @@
     <logo>https://necker14.github.io/images/avatar.png</logo>
     <icon>https://necker14.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Kevin的自留地</rights>
+    <entry>
+        <title type="html"><![CDATA[关于Linux的学习记录_01]]></title>
+        <id>https://necker14.github.io/post/guan-yu-linux-de-xue-xi-ji-lu-_01</id>
+        <link href="https://necker14.github.io/post/guan-yu-linux-de-xue-xi-ji-lu-_01">
+        </link>
+        <updated>2020-02-03T03:51:47.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>这是Kevin的计算机学习博客记录</strong></p>
+<p>本次目标：</p>
+<ol>
+<li>建立两个用户组group1和group2，以及三个用户dennis、daniel、abigale，并且将前2个用户分配在group1用户组下，后一个分配在group2用户组下。</li>
+<li>创建一个whzy102.txt文件   将该文件的存取属性设置为对所有用户可读，可写和不可执行。</li>
+<li>查找/bin目录中所有字母v开头的文件,且把定位结果重定向到文件wang2中。</li>
+</ol>
+<p>进行操作的环境为：<br>
+<em>·Windows 10 专业版<br>
+·VMware Workstation Pro 15.5正式版<br>
+·centos6.5正式发行版</em></p>
+<hr>
+<p>第一项：<br>
+<em>实现第一项我们可能用到的Linux指令有：groupadd、useradd、passwd</em></p>
+<p><strong>·首先，我们先建立两个用户组group1和group2</strong></p>
+<p>指令为：<br>
+<code>groupadd group1</code><br>
+<code>groupadd group2</code><br>
+<img src="https://necker14.github.io/post-images/1580702511895.png" alt="" loading="lazy"></p>
+<p><strong>·接着，我们将创建三个用户dennis、daniel、abigale，并按要求将前2个用户分配在group1用户组下，后一个分配在group2用户组下</strong></p>
+<p>指令为:<br>
+<code>useradd -g group1 dennis</code><br>
+<code>useradd -g group1 daniel</code><br>
+<code>useradd -g group2 abigale</code><br>
+<img src="https://necker14.github.io/post-images/1580702846051.png" alt="" loading="lazy"></p>
+<p><em>P.S. 指令说明:</em><br>
+<code>groupadd 组名</code>  创建一个用户组<br>
+<code>useradd -g 组名 用户名</code> 在一个现有组里添加一个用户</p>
+<p><strong>·但是我们不知道我们是否成功了，输入完指令Linux系统也没有任何的提示，我们可以使用id指令来检查我们的用户，语法为</strong> <code>id 用户名</code></p>
+<p>指令为：<br>
+<code>id dennis</code><br>
+<code>id daniel</code><br>
+<code>id abigale</code><br>
+<img src="https://necker14.github.io/post-images/1580703439611.png" alt="" loading="lazy"></p>
+<p>至此，第一项就完成啦</p>
+<hr>
+<p>第二项：<br>
+<em>实现第二项我们可能用到的Linux指令有：touch、chmod</em></p>
+<p><strong>·首先，我们先创建一个whzy102.txt文件，使用ll指令查看创建是否成功</strong></p>
+<p>指令：<br>
+<code>touch whzy102.txt</code><br>
+<code>ll</code><br>
+<img src="https://necker14.github.io/post-images/1580706474127.png" alt="" loading="lazy"></p>
+<p><strong>·然后对whzy102.txt文件进行权限设置,存取属性设置为对所有用户可读，可写和不可执行,用ll指令检查是否修改成功</strong></p>
+<p>指令：<br>
+<strong>chmod a=rw whzy102.txt</strong><br>
+<img src="https://necker14.github.io/post-images/1580706655500.png" alt="" loading="lazy"></p>
+<p><em>P.S. 指令说明:</em><br>
+<code>touch 文件名</code> 在当前目录下创建一个文件<br>
+<code>chmod a=rw 文件名</code> 为XX文件开放所有人的读写权限</p>
+<p>至此，第二项就完成啦</p>
+<hr>
+<p>第三项：<br>
+<em>实现第三项我们可能用到的Linux指令有：find、|、&gt;</em></p>
+<p><strong>·首先，我们使用find指令查找/bin目录下的所有V开头文件</strong></p>
+<p>指令：<br>
+<code>find /bin/ -name &quot;v*&quot;</code><br>
+<img src="https://necker14.github.io/post-images/1580708167902.png" alt="" loading="lazy"></p>
+<p><em>将输出重定向到wang2中，并通过vim检查是否成功</em><br>
+指令：<br>
+<code>find /bin/ -name &quot;v*&quot; &gt;wang2.txt</code><br>
+<code>vim wang2.txt</code><br>
+<img src="https://necker14.github.io/post-images/1580708272933.png" alt="" loading="lazy"><br>
+<img src="https://necker14.github.io/post-images/1580708307068.png" alt="" loading="lazy"></p>
+<p><em>P.S.指令说明：</em><br>
+<code>find /bin/ -name &quot;v*&quot;</code> 在/bin目录下通过文件名寻找所有小写v开头的文件<br>
+<code>find /bin/ -name &quot;v*&quot; &gt;wang2.txt</code> 将上指令的列表结果输出重定向到wang2.txt文件当中<br>
+<code>vim wang2.txt</code> 通过vim编辑器编写wang2.txt文件</p>
+<p>至此，第三项就完成啦</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[平凡]]></title>
         <id>https://necker14.github.io/post/ping-fan</id>
@@ -453,23 +530,6 @@ Kevin</p>
 <p>无法不承认你是一个合格的父亲，但是你和我们心目中的好父亲还有那么一段距离。你已经一步一步步入了老年，应该休息了，不需要追求名利，不需要追求所谓的面子。是应该追求本命的一些安排。积蓄一生的财产也没有必要那么俭省(虽然客观来讲是很不错的)但是作为你的儿女，我更愿意你生活得更好一点。那些老文化，老规矩，老思想的枷锁已经看起来是非常可笑和愚昧的了，如果一些所谓的年轻人的思想轻狂或者说不服老，你可以理解为年轻人对你的陈旧自封的思想的一种现实化的抗拒，一种你的想法极端化的体现。</p>
 <p>我想要我的父亲是大度的，是对家人付之于全身心而不是完成任务式的，不是陈旧自封的，不是用情绪化的对家人的爱来报答大自然的安排的，更不是对于子女区别化处理以及对待家庭报以任何的游戏不人道的不自由和拘束的任何想法。这令我和你的其他子女真的无法接受。除开这些，我可以给你打满分。</p>
 <p>祝你健康快乐 我爱恨的父亲</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[与梦梦书——前]]></title>
-        <id>https://necker14.github.io/post/yu-meng-meng-shu-qian</id>
-        <link href="https://necker14.github.io/post/yu-meng-meng-shu-qian">
-        </link>
-        <updated>2019-06-19T07:58:18.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
-<p>每当光阴赋予你时，你可否有所知。<br>
-你会前行或者喘息，你会迎取或者躲避。</p>
-</blockquote>
-<p>致小豆：</p>
-<p>很高兴你给我写的信。用一个我喜欢并且足够纯粹的方式传达了你的消息。我今天还是只有用这样的方式给你回信了。</p>
-<p>实际上我这个人是很恋旧的。有人告诉我他挺唾弃的，这很简单啊，有人得喜欢新东西，也会有人喜欢老东西。假如说一个人，一首歌，一句诗不被人铭记而流逝在岁月里，是一个足够让人感伤的事情，就像是独留深闺的未亡人，忘却那便是死了。无论是音乐还是记忆，现在就像是快销品快速过物。我怀念那个『车，马，邮件都慢 ，一生只够爱一个人 』小酌三两杯淡酒，卧阅一两卷书文。那时眼底没有他物，等相遇的缘分。佛说：“百年修得同船渡，千年修得共枕眠。”但是缘也是一个很玄的东西。那时是小小的，纯纯的小小只的。</p>
-<p>我说的未来都是假的。月落，空谷幽兰，雨打在花上有传来松针落地般的脆响。我有时候晚上望天花板，平时有些时候是应付，说自己甘于平凡那真是假的。但是有些东西是不得不面对的。我还记得，小时候爱骑着自行车在积水的空地上原地转圈。看着地上一圈一圈的水迹，我当时把这个当成最快乐的玩乐方式。后来的人生似乎也被圈住了，而我却一直只能原地转圈。我也曾想走出那个怪圈，把他妈的命运打个地覆天也翻。后来我记住了，有时候能力有限，就不要勉强自己。这样活着挺累。那时候我挺心疼你，但是现在我也心疼我自己了。</p>
-<p>有时候人也会不由自主的矫情。可以步履不停，相遇的花朵雨露还有那海浪，以及下一个清晨山谷和理想。我希望我们能有一个可预见的未来今人开心，也希望能开始属于自己的优秀冒险。喝不完一夜说不尽的醉人的歌谣，穿过万水和千山只愿去赴你，从因为相逢而开始的千里迢迢。</p>
 ]]></content>
     </entry>
 </feed>
