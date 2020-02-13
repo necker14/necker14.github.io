@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://necker14.github.io</id>
     <title>Kevin的自留地</title>
-    <updated>2020-02-03T05:54:23.959Z</updated>
+    <updated>2020-02-13T17:45:21.526Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://necker14.github.io"/>
     <link rel="self" href="https://necker14.github.io/atom.xml"/>
@@ -11,6 +11,102 @@
     <logo>https://necker14.github.io/images/avatar.png</logo>
     <icon>https://necker14.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Kevin的自留地</rights>
+    <entry>
+        <title type="html"><![CDATA[关于Linux的学习记录_02]]></title>
+        <id>https://necker14.github.io/post/guan-yu-linux-de-xue-xi-ji-lu-_02</id>
+        <link href="https://necker14.github.io/post/guan-yu-linux-de-xue-xi-ji-lu-_02">
+        </link>
+        <updated>2020-02-13T16:14:25.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>这是Kevin的计算机学习博客记录</strong></p>
+<p>本次目标：</p>
+<ol>
+<li>添加一个 50个G的磁盘，正确挂载后并配置永久使用。</li>
+<li>实现以下情况：有三个用户分别为u1、u2、u3他们共同有一个工作目录 /project，且三个用户均能在里面工作，可以相互修改文件，但不能进行删除操作。</li>
+</ol>
+<p>进行操作的环境为：<br>
+<em>·Windows 10 专业版<br>
+·VMware Workstation Pro 15.5正式版<br>
+·centos6.5正式发行版</em></p>
+<hr>
+<p>第一项</p>
+<p><strong>首先我们在VMware Workstation Pro当中添加50G的磁盘容量</strong><br>
+<img src="https://necker14.github.io/post-images/1581610667929.png" alt="" loading="lazy"><br>
+打开虚拟机设置，在硬盘的子选项里可以选择“添加”</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581610722177.png" alt="" loading="lazy"><br>
+我们在硬件类型当中勾选磁盘后进行下一步</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581610758836.png" alt="" loading="lazy"><br>
+因为现在使用的磁盘类型基本上都是SCSI，并且VMware Workstation Pro软件也推荐我们使用它</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581610800632.png" alt="" loading="lazy"><br>
+我们创建一个新的虚拟磁盘即可</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581610826212.png" alt="" loading="lazy"><br>
+要求我们创建50G的磁盘，所以在这里我们修改为50G的磁盘大小，并选择吧磁盘拆分成多个文件</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581610886051.png" alt="" loading="lazy"><br>
+至此，我们就可以看到在VMware Workstation Pro软件里已经可以识别出我们新创建的磁盘了</p>
+<hr>
+<p><strong>然后我们进行Linux的配置</strong></p>
+<p><img src="https://necker14.github.io/post-images/1581612272621.png" alt="" loading="lazy"><br>
+输入<code>lsblk -f</code>后我们就可以看到Centos已经识别了一个新的sdb区，不过目前它什么都没有</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581612361469.png" alt="" loading="lazy"><br>
+所以我们输入<code>fdisk /dev/sdb</code>来进行分区，我们首先输入“n”来创建新分区</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581612440120.png" alt="" loading="lazy"><br>
+输入“p”，分区选择主分区，两次回车默认剩余全部空间</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581612506855.png" alt="" loading="lazy"><br>
+最后输入“w”写入磁盘并退出，若不写入磁盘输入“q”</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581612555673.png" alt="" loading="lazy"><br>
+我们可以看到已经提示写入成功了，这时候我们开始格式化分区，输入<code>mkfs -t ext4 /dev/sdb1</code></p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581612624229.png" alt="" loading="lazy"><br>
+我们这时候先在/home文件夹下创建一个newdisk文件夹，来做挂载文件夹</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581612677983.png" alt="" loading="lazy"><br>
+输入<code>mount /dev/sdb1 /home /newdisk/</code>来把sdb1分区挂载到newdisk文件夹当中</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581612770862.png" alt="" loading="lazy"><br>
+我们这时候再输入<code>lsblk</code>就能看到我们已经挂载成功</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581612807459.png" alt="" loading="lazy"><br>
+我们再把它做成自动挂载（永久挂载），首先去/etc/fstab当中修改一下</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581612878636.png" alt="" loading="lazy"><br>
+写好相关配置信息就可以保存退出啦</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581612998963.png" alt="" loading="lazy"><br>
+重启Linux后，再输入<code>lsblk</code>，发现他已经自动挂载成功了</p>
+<hr>
+<p>第二项</p>
+<p><img src="https://necker14.github.io/post-images/1581615473597.png" alt="" loading="lazy"><br>
+首先在zz组里创建三个用户u1、u2、u3</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581615484940.png" alt="" loading="lazy"><br>
+进行密码设置</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581615497075.png" alt="" loading="lazy"><br>
+我们进入到home文件夹创建一个project文件夹</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581615530877.png" alt="" loading="lazy"><br>
+输入<code>chown u1:zz project/</code>把project给u1，用户组给zz</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581615582573.png" alt="" loading="lazy"><br>
+进入project文件夹后通过umask设置创建文件的默认权限，测试已经成功</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581615631734.png" alt="" loading="lazy"><br>
+这时候进入到home文件夹，输入<code>chattr +a -R project/</code>让project文件夹内所有文件只能修改不能删除</p>
+<hr>
+<p><img src="https://necker14.github.io/post-images/1581615733095.png" alt="" loading="lazy"><br>
+测试成功</p>
+<hr>
+<p>至此，本次记录完成</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[关于Linux的学习记录_01]]></title>
         <id>https://necker14.github.io/post/guan-yu-linux-de-xue-xi-ji-lu-_01</id>
@@ -518,18 +614,6 @@
 <p>这封信我分了两次写，中间发生的变故太多，让我构思乱成了一团.不过好在还是写完了，也没时间改稿，凑合看吧.等你回信.</p>
 <p>2018.10.22<br>
 Kevin</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[与父书]]></title>
-        <id>https://necker14.github.io/post/yu-fu-shu</id>
-        <link href="https://necker14.github.io/post/yu-fu-shu">
-        </link>
-        <updated>2019-06-19T08:07:43.000Z</updated>
-        <content type="html"><![CDATA[<p>人生最大的遗憾和喜悦无过于是遇到了一个让自己爱恨心头的一个父亲 只希望你能够更多为他人考虑，为他人歌唱，为他人鼓掌。不必再考虑那么多的身外之物，那么多的面子。管他的众说众议， 独守本心，铮趸心智 。思想不要过于极端化，多听闻现世以前不所关注的俗事。我相信你和儿女的共同话题会更多。</p>
-<p>无法不承认你是一个合格的父亲，但是你和我们心目中的好父亲还有那么一段距离。你已经一步一步步入了老年，应该休息了，不需要追求名利，不需要追求所谓的面子。是应该追求本命的一些安排。积蓄一生的财产也没有必要那么俭省(虽然客观来讲是很不错的)但是作为你的儿女，我更愿意你生活得更好一点。那些老文化，老规矩，老思想的枷锁已经看起来是非常可笑和愚昧的了，如果一些所谓的年轻人的思想轻狂或者说不服老，你可以理解为年轻人对你的陈旧自封的思想的一种现实化的抗拒，一种你的想法极端化的体现。</p>
-<p>我想要我的父亲是大度的，是对家人付之于全身心而不是完成任务式的，不是陈旧自封的，不是用情绪化的对家人的爱来报答大自然的安排的，更不是对于子女区别化处理以及对待家庭报以任何的游戏不人道的不自由和拘束的任何想法。这令我和你的其他子女真的无法接受。除开这些，我可以给你打满分。</p>
-<p>祝你健康快乐 我爱恨的父亲</p>
 ]]></content>
     </entry>
 </feed>
