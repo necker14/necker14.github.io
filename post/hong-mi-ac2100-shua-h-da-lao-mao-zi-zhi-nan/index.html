@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimal-ui" />
+    <title>红米AC2100刷H大老毛子指南 | Kevin的自留地</title>
+<link rel='stylesheet' id='puma-css'  href='https://necker14.github.io/styles/main.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='puma-css'  href='https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css' media='screen' />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<script type='text/javascript' src='https://necker14.github.io/media/scripts/jquery.js'></script>
+<script type='text/javascript' src='https://necker14.github.io/media/scripts/jquery-migrate.min.js'></script>
+        <script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+         <script >hljs.initHighlightingOnLoad();</script>
+         
+</head>
+<body class="single single-post postid-3788 single-format-standard">
+	<!--加入跟随滑动的顶部-->
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+			<h1 class="site-title">
+				<a href="https://necker14.github.io" title="Kevin的自留地">Kevin的自留地</a>
+			</h1>
+		</div>
+
+		<a class="primary-nav-trigger" href="javascript:void(0)">
+			<span class="menu-icon"></span>
+		</a>
+		
+	</header>
+		<div class="site-navigation-wrapper">
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<ul class="primary-nav">
+                    
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="首页" href="/">首页</a></li>
+                
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="归档" href="/archives">归档</a></li>
+                
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="标签" href="/tags">标签</a></li>
+                
+				<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a title="关于" href="/post/about">关于</a></li>
+                
+	
+			</ul>
+		</nav>			
+	</div>
+	<!--跟随滑动的顶部结束-->
+	<div class="surface-content">    <main class="main-content">
+        <section class="section-body">
+                            <header class="section-header u-textAlignCenter">
+                    <h2 class="grap--h2">红米AC2100刷H大老毛子指南</h2>
+                    <div class="block-postMetaWrap">
+                        <time>2020-09-04</time>
+                    </div>
+                </header>
+                <div class="grap">
+					  <p class="with-img"><img width="1139" height="759" src="https://necker14.github.io/post-images/hong-mi-ac2100-shua-h-da-lao-mao-zi-zhi-nan.jpg" class="attachment-full size-full wp-post-image" alt="红米AC2100刷H大老毛子指南" /></p>
+					<p>算是大白话，因为我也算是依葫芦画瓢，但是恩山现在的教程都太麻烦了，我还是单独写一个吧。</p>
+<p>1.首先是前期准备</p>
+<p>**·**蓝奏 ：https://ww.lanzous.com/icbb3wj</p>
+<p>**·**老毛子固件下载 ：https://opt.cn2qq.com/padavan/RM2100_3.4.3.9-099.trx</p>
+<p>**·**解压后启动 <strong>“npcap-0.9991”</strong> 安装npcap</p>
+<p>**·**安装 putty ：https://www.putty.org/</p>
+<p>**·**在开始菜单-设置-程序-程序和功能-启用和关闭Windows功能-勾选telnet client（注:不需要telnet server，现在win10也没有telnet服务器端了）</p>
+<figure data-type="image" tabindex="1"><img src="https://necker14.github.io/post-images/1599224798357.png" alt="" loading="lazy"></figure>
+<p><strong>重要</strong>：禁用除连接路由那张网卡外其余所有接口，关闭防火墙和杀毒软件（如有）</p>
+<figure data-type="image" tabindex="2"><img src="https://necker14.github.io/post-images/1599225521948.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://necker14.github.io/post-images/1599225527706.png" alt="" loading="lazy"></figure>
+<p>2.把路由器的屁股像这样用网线连接好</p>
+<figure data-type="image" tabindex="4"><img src="https://necker14.github.io/post-images/1599225140077.png" alt="" loading="lazy"></figure>
+<p>3.设置电脑的IP</p>
+<figure data-type="image" tabindex="5"><img src="https://necker14.github.io/post-images/1599225642932.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="6"><img src="https://necker14.github.io/post-images/1599225660344.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="7"><img src="https://necker14.github.io/post-images/1599225665961.png" alt="" loading="lazy"></figure>
+<p>4.进入路由器开始设置</p>
+<p>第一步</p>
+<figure data-type="image" tabindex="8"><img src="https://necker14.github.io/post-images/1599225751929.png" alt="" loading="lazy"></figure>
+<p>第二步</p>
+<p><strong>重要</strong> ： 路由器的局域网IP地址需要修改，设置为：<strong>192.168.31.1</strong></p>
+<p>5.打开下载的文件夹rm2100，开启telnet命令.txt并复制里面的内容。这个我们马上就会使用</p>
+<p>6.打开“一键开启telnet.bat”（不要用管理员运行！）</p>
+<figure data-type="image" tabindex="9"><img src="https://necker14.github.io/post-images/1599225985847.png" alt="" loading="lazy"></figure>
+<p>7.在新弹出的窗口有代码后就回到主窗口输入“Y”</p>
+<figure data-type="image" tabindex="10"><img src="https://necker14.github.io/post-images/1599226074956.png" alt="" loading="lazy"></figure>
+<p>8.弹出第三个窗口，出现图中第二行代码时马上粘贴我们早就准备好的代码，下方进度条100%之后我们进行下一步。</p>
+<figure data-type="image" tabindex="11"><img src="https://necker14.github.io/post-images/1599226188074.png" alt="" loading="lazy"></figure>
+<p>9.快捷键win+R，输入cmd打开命令指示符窗口，输入以下命令，完成后如下图<br>
+之后就可以刷机了。</p>
+<p><em>复制粘贴到cmd里就行了：</em></p>
+<p>telnet 192.168.31.1<br>
+wget http://192.168.31.177:8081/r3g.bin&amp;&amp;nvram set uart_en=1&amp;&amp;nvram set bootdelay=5&amp;&amp;nvram set flag_try_sys1_failed=1&amp;&amp;nvram commit<br>
+mtd -r write r3g.bin kernel1</p>
+<hr>
+<p>这样就成功了<br>
+<img src="https://necker14.github.io/post-images/1599226502184.png" alt="" loading="lazy"></p>
+<p>10.再次修改电脑IP</p>
+<figure data-type="image" tabindex="12"><img src="https://necker14.github.io/post-images/1599226536419.png" alt="" loading="lazy"></figure>
+<p>11.使用putty，winscp等工具</p>
+<figure data-type="image" tabindex="13"><img src="https://necker14.github.io/post-images/1599226613818.gif" alt="" loading="lazy"></figure>
+<p><em>ip为：192.168.1.1<br>
+账号为：root或admin（自己试，我是root）<br>
+密码为:admin</em></p>
+<p>进入winscp，把老毛子固件放到tmp目录下，改名字为redmi.trx（需要注意的是，winscp连接路由器的时候协议选scp）</p>
+<h2 id="进入putty执行">进入putty，执行：</h2>
+<p>mtd -r write /tmp/redmi.trx kernel</p>
+<hr>
+<p>你们要是还没看懂的，可以看看我学习的帖子：<br>
+https://www.right.com.cn/FORUM/thread-4017726-1-1.html</p>
+<p>https://www.right.com.cn/FORUM/thread-4018169-1-1.html</p>
+
+                </div>
+
+                <div class="post--keywords" itemprop="keywords">
+					          </div>
+
+
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'fa68a83a2b1813e6834b',
+    clientSecret: '44f62cc34781aa28265a9a2c646c3197af9a5d1c',
+    repo: 'necker14.github.io',
+    owner: 'necker14',
+    admin: ['necker14'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+                      </section>
+    </main>
+</div>
+	<footer class="site-footer u-textAlignCenter">
+    	<div class="footer-branding">
+            <a href="https://necker14.github.io" title="Kevin的自留地">Kevin的自留地</a>
+									<p class="site-description">一个人该想什么该讲什么？</p>
+			         </div>
+		 <hr />
+		 <div class="social-links">
+		                       
+                            
+                           
+                            
+                           
+                            	
+			<span class="social-link"><a href="https://github.com/necker14" target="_blank"><i class="iconfont icon-github"></i></a></span>	
+			                         
+                           
+                            	
+			<span class="social-link"><a href="https://www.zhihu.com/people/liu-yihan-11" target="_blank"><i class="iconfont icon-zhihu"></i></a></span>	
+			                         
+                           
+                            
+                           
+                            
+                           
+                            	
+			<span class="social-link"><a href="https://t.me/SunAiLiu" target="_blank"><i class="iconfont icon-telegram"></i></a></span>	
+			                         
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+				</div>
+        <div class="footer-copy">
+                轻易听信别人告诉你的，让禁忌阻碍你的视野，给自己定下条条框框，过约定俗成的生活，这叫做二手生活。我希望我的“自我”永远“滋滋”地响，翻腾不休，就像火炭上的一滴糖。
+        </div>
+
+    </footer>
+	<div class="back-to-top u-hide" onclick="backToTop();"><i class="iconfont icon-xiangshang"></i></div>
+
+<script type='text/javascript' src='https://necker14.github.io/media/scripts/main.js'></script>
+</body>
+</html>

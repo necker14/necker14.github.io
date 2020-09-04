@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://necker14.github.io</id>
     <title>Kevin的自留地</title>
-    <updated>2020-07-09T10:35:28.447Z</updated>
+    <updated>2020-09-04T13:43:57.378Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://necker14.github.io"/>
     <link rel="self" href="https://necker14.github.io/atom.xml"/>
@@ -11,6 +11,66 @@
     <logo>https://necker14.github.io/images/avatar.png</logo>
     <icon>https://necker14.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Kevin的自留地</rights>
+    <entry>
+        <title type="html"><![CDATA[红米AC2100刷H大老毛子指南]]></title>
+        <id>https://necker14.github.io/post/hong-mi-ac2100-shua-h-da-lao-mao-zi-zhi-nan/</id>
+        <link href="https://necker14.github.io/post/hong-mi-ac2100-shua-h-da-lao-mao-zi-zhi-nan/">
+        </link>
+        <updated>2020-09-04T12:55:21.000Z</updated>
+        <content type="html"><![CDATA[<p>算是大白话，因为我也算是依葫芦画瓢，但是恩山现在的教程都太麻烦了，我还是单独写一个吧。</p>
+<p>1.首先是前期准备</p>
+<p>**·**蓝奏 ：https://ww.lanzous.com/icbb3wj</p>
+<p>**·**老毛子固件下载 ：https://opt.cn2qq.com/padavan/RM2100_3.4.3.9-099.trx</p>
+<p>**·**解压后启动 <strong>“npcap-0.9991”</strong> 安装npcap</p>
+<p>**·**安装 putty ：https://www.putty.org/</p>
+<p>**·**在开始菜单-设置-程序-程序和功能-启用和关闭Windows功能-勾选telnet client（注:不需要telnet server，现在win10也没有telnet服务器端了）</p>
+<figure data-type="image" tabindex="1"><img src="https://necker14.github.io/post-images/1599224798357.png" alt="" loading="lazy"></figure>
+<p><strong>重要</strong>：禁用除连接路由那张网卡外其余所有接口，关闭防火墙和杀毒软件（如有）</p>
+<figure data-type="image" tabindex="2"><img src="https://necker14.github.io/post-images/1599225521948.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://necker14.github.io/post-images/1599225527706.png" alt="" loading="lazy"></figure>
+<p>2.把路由器的屁股像这样用网线连接好</p>
+<figure data-type="image" tabindex="4"><img src="https://necker14.github.io/post-images/1599225140077.png" alt="" loading="lazy"></figure>
+<p>3.设置电脑的IP</p>
+<figure data-type="image" tabindex="5"><img src="https://necker14.github.io/post-images/1599225642932.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="6"><img src="https://necker14.github.io/post-images/1599225660344.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="7"><img src="https://necker14.github.io/post-images/1599225665961.png" alt="" loading="lazy"></figure>
+<p>4.进入路由器开始设置</p>
+<p>第一步</p>
+<figure data-type="image" tabindex="8"><img src="https://necker14.github.io/post-images/1599225751929.png" alt="" loading="lazy"></figure>
+<p>第二步</p>
+<p><strong>重要</strong> ： 路由器的局域网IP地址需要修改，设置为：<strong>192.168.31.1</strong></p>
+<p>5.打开下载的文件夹rm2100，开启telnet命令.txt并复制里面的内容。这个我们马上就会使用</p>
+<p>6.打开“一键开启telnet.bat”（不要用管理员运行！）</p>
+<figure data-type="image" tabindex="9"><img src="https://necker14.github.io/post-images/1599225985847.png" alt="" loading="lazy"></figure>
+<p>7.在新弹出的窗口有代码后就回到主窗口输入“Y”</p>
+<figure data-type="image" tabindex="10"><img src="https://necker14.github.io/post-images/1599226074956.png" alt="" loading="lazy"></figure>
+<p>8.弹出第三个窗口，出现图中第二行代码时马上粘贴我们早就准备好的代码，下方进度条100%之后我们进行下一步。</p>
+<figure data-type="image" tabindex="11"><img src="https://necker14.github.io/post-images/1599226188074.png" alt="" loading="lazy"></figure>
+<p>9.快捷键win+R，输入cmd打开命令指示符窗口，输入以下命令，完成后如下图<br>
+之后就可以刷机了。</p>
+<p><em>复制粘贴到cmd里就行了：</em></p>
+<p>telnet 192.168.31.1<br>
+wget http://192.168.31.177:8081/r3g.bin&amp;&amp;nvram set uart_en=1&amp;&amp;nvram set bootdelay=5&amp;&amp;nvram set flag_try_sys1_failed=1&amp;&amp;nvram commit<br>
+mtd -r write r3g.bin kernel1</p>
+<hr>
+<p>这样就成功了<br>
+<img src="https://necker14.github.io/post-images/1599226502184.png" alt="" loading="lazy"></p>
+<p>10.再次修改电脑IP</p>
+<figure data-type="image" tabindex="12"><img src="https://necker14.github.io/post-images/1599226536419.png" alt="" loading="lazy"></figure>
+<p>11.使用putty，winscp等工具</p>
+<figure data-type="image" tabindex="13"><img src="https://necker14.github.io/post-images/1599226613818.gif" alt="" loading="lazy"></figure>
+<p><em>ip为：192.168.1.1<br>
+账号为：root或admin（自己试，我是root）<br>
+密码为:admin</em></p>
+<p>进入winscp，把老毛子固件放到tmp目录下，改名字为redmi.trx（需要注意的是，winscp连接路由器的时候协议选scp）</p>
+<h2 id="进入putty执行">进入putty，执行：</h2>
+<p>mtd -r write /tmp/redmi.trx kernel</p>
+<hr>
+<p>你们要是还没看懂的，可以看看我学习的帖子：<br>
+https://www.right.com.cn/FORUM/thread-4017726-1-1.html</p>
+<p>https://www.right.com.cn/FORUM/thread-4018169-1-1.html</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[黄金时代]]></title>
         <id>https://necker14.github.io/post/huang-jin-shi-dai/</id>
@@ -568,18 +628,6 @@
 <p>我一直相信照片和影像能够表达的情感更多，但是文字更有留白的效果。我之前在旅途中拍摄的影像很多都摇摇晃晃，就算是手机有光学防抖也无济于事，以后有计划会购买一个DJI手机云台。</p>
 <p>这个暑假我都在家寡寡欲欢，但开学前的这个旅行让我整个人都放松无比，灵魂都在快活地颤抖：“就是这个感觉！”</p>
 <p>远离父母的大学新生活，一切都是新的。这是我想要的。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[回转]]></title>
-        <id>https://necker14.github.io/post/hui-zhuan/</id>
-        <link href="https://necker14.github.io/post/hui-zhuan/">
-        </link>
-        <updated>2019-07-16T06:56:12.000Z</updated>
-        <content type="html"><![CDATA[<p>我一直相信科技会给人类带来福祉，但是在这个时代我看到的只是一个更疯狂且无底线的人们。我不认为我是一个有趣的人，事实上我也很懦弱和无知。我往往会为了一些不以言到的小事而耿耿于怀，是的，每个人是不可能没有污点的。这里不是给我自己立牌坊，也不是为了解释太多。</p>
-<p>顽固不化的传统，利剑般伤人的言语，往往让人措手不及。我很无奈也很悲伤，现在社会的改造力是惊人的。它无影无形，它无处不在，它在生活过程中的妥协不声不响地慢慢改造每个人。时间回转，许多人回看往昔，是满满的不堪还是怀念？这里引申一个哲学论题，为什么不同时间的同一个人对待同一个事情有如此差距的看法？是它在作祟。它让你学会低头，学会妥协，这是可笑的教训和记忆。它让你失去棱角，失去进取心，失去对未来的憧憬。让你产生这样的想法：“这样生活下去其实也还好。”</p>
-<p>这个中国社会现在把职业和未来挂钩，因为这个是一个很简单的导向：生存——钱——赚钱——职业。有一个好的职业是传统社会所推崇的，一个“不务正业”往往会使很多人戴上不该属于他的帽子。正如“课外书”这个名词，学习不分课内外，自学成才的天才历史上比比皆是，是当今社会畸形价值观下诞生的畸形认知。我相信每个有独立思考能力的人类是可以揣测出一点点尾巴的，正是因为它的不合理和麻烦。但是没人指责过，因为那样投入回报不成正比，这个公共舆论空间没有反对言论的土壤。“在没有威胁到切身利益之前，中国人是不会站出来说话的。”如今中国社会民智未开，这样能如何回转？</p>
-<p>不如担心我自己，我曾经在社交平台写下这样一句话：“你的能力配不上你的野心。”站在人生十字路口的我，我曾深陷抑郁，每天郁郁终日，也很开心原来自己身边还有人在关心我，我从来不会否认自己是最差的那一个，我从小到大自卑如影随形，造就了我自卑，悲观，和阴郁的性格。表面的热情那只是为了让身边朋友不离我远去，可是本身就不怎样的我，是不会受太多人欢迎的。我的能力，也没有什么言说的，在9年寒窗，成绩不算好，可以说有一些差劲，高考如此，中考如此。我沉沦于思考人生价值，我深刻明白应试教育下并不会考虑考虑个人综合素质。但是社会是唯分数，无法逃避无法绕开。父母的责问，自身的内疚，老师的失望，是实实切切抨击着我的内心。我就是这么贱吧，心里想的到位，但是我走到现在也只有这个现实摆在了面前。所以我思考人生如何回转，如何让我内心的自己逞心如意？说努力是表面认识，我是要有成就的基础上仍然能让我开心，我真的很羡慕我的两个亲亲姐姐，哪怕在某些事情见解不予苟同，但是她们一直都是这个世界上最爱我的人之一，也是我要的标杆，有人也许会说我的梦想格局太小，其实每个人都只会渴望一个唯心的小幸福。包括我，所以我现在也算是经历过命运的第一次洗礼，未来怎么样，我不会怨恨任何人。只能在心中渴望一次回转。</p>
 ]]></content>
     </entry>
 </feed>
