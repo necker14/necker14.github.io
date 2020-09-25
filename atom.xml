@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://necker14.github.io</id>
     <title>Kevin的自留地</title>
-    <updated>2020-09-04T16:58:36.950Z</updated>
+    <updated>2020-09-25T15:56:34.263Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://necker14.github.io"/>
     <link rel="self" href="https://necker14.github.io/atom.xml"/>
@@ -11,6 +11,19 @@
     <logo>https://necker14.github.io/images/avatar.png</logo>
     <icon>https://necker14.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Kevin的自留地</rights>
+    <entry>
+        <title type="html"><![CDATA[Hey Liv]]></title>
+        <id>https://necker14.github.io/post/hey-liv/</id>
+        <link href="https://necker14.github.io/post/hey-liv/">
+        </link>
+        <updated>2020-09-25T15:20:32.000Z</updated>
+        <content type="html"><![CDATA[<p>这几天武汉难得的一直在连续下雨，甚至让我有点追忆起成都之前汛期的连绵大雨。想来当时的你也在为大雨烦恼吧，同时也在为自己的未来而烦恼。我能懂的，我都能理解，老师同学眼中冰冷的失望，亦或者是讥嘲；父母的意难平，最重要的是你对你自己的不自信以及逃避。你说你有对我的内疚，其实我要告诉你的是：我一点也不care你的成绩，也不care你最后到底考的如何，我们关系好是因为兴趣爱好类似，对美的理解类似，遥想高中那会儿我们好像有说不完的话题，我有无限的精力和你分享各种各样的好东西。而不是高考成绩，不是你去了什么地方读了什么大学，这一点你可能想的太唯心了。所以，Liv，我要再次大声地告诉你：我一点也不care！我只要你开心健康就好了，信命及时行乐未必是坏事，一个人的青春就这几年，对自己轻松一点。</p>
+<p>你要是问我会不会不开心，那是一定有一点的，但是我知道你不理我事出必有因，可能1是我惹你生气了，导致你不理我，但是我们相处的很愉快，所以我暂时不知道可能1还有什么成立的可能，可能2是问题出在你，但是我一直相信你是个心理强大的女孩，所以我只能等你。就像是我在你复读的时候的处理方式一样，因为我知道你一定是因为某件事而无法和我正常交流，那我也不会继续打扰你，我给你的留言你应该都会阅读，等时间合适了自然会回复我，亦或者是你会主动找我，我也会很快的回复你。实际上我也有在想你最近在做什么，可能会想你最近有没有出游计划，你的人生下一站城市是在哪里，你的专业最后还是选了什么，你最近应该要开学了吧，我要不要去问问你呢，你有交到新朋友吗，你最近有失眠吗，你最近发现了什么宝藏歌曲吗，Wooo~~我有好多好多话想问问你，但是我不能打扰你的生活，最多会隔段时间小小地试探一下你，其实我还是忍住了好多次想和你打电话的冲动，我打电话过去你会不会很困扰呢，亦或者会直接不接，哈哈哈哈，我感觉我都快得妄想症了。</p>
+<p>The Beatles其实我听的太少，但是唯独特别喜欢Hey Jude，吸引我的是旋律，沉溺我的是故事。保罗·麦卡特尼非常喜欢Julian，他担心父母的婚姻破裂会影响孩子的心情，所以为了安慰Julian，保罗就用一首歌来鼓励Julian面对父母离婚的现实。我这个短短的文字之所以叫“Hey Liv”，是我为了让你面对现实的鼓励，它虽然没有韵脚也没有音律，但是会寄托我对你的关心和鼓励。</p>
+<p>我想我有必要再次repeat一次：Hey Liv ， I don't care<br>
+只愿我们的友谊地久天长~</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[红米AC2100刷H大老毛子指南]]></title>
         <id>https://necker14.github.io/post/hong-mi-ac2100-shua-h-da-lao-mao-zi-zhi-nan/</id>
@@ -457,177 +470,6 @@ https://www.right.com.cn/FORUM/thread-4017726-1-1.html</p>
 <p>13.接下来就开始正式安装了<br>
 <img src="https://necker14.github.io/post-images/1578934484786.png" alt="" loading="lazy"></p>
 <h2 id="至此centos-7-65均已完成">至此，CentOS 7 / 6.5均已完成</h2>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Do happy don't worry]]></title>
-        <id>https://necker14.github.io/post/chen-mo/</id>
-        <link href="https://necker14.github.io/post/chen-mo/">
-        </link>
-        <updated>2019-09-08T11:03:39.000Z</updated>
-        <content type="html"><![CDATA[<p>这是一篇游记，关于前段时间去过的一个城市。因为多图，所以建议挂梯子游览本游记。</p>
-<p>本是6月末的一次旅行，硬生生被我拖到了9月。高考过去的这2个半月，好像曾经的高中生活是一场梦，我没有缅怀过，也没有后悔过自己的决定。只是在后来同别人聊天看到了一些过去的影子。在床上思来想去过要不要进行一个一个人的旅行，这也不是纯粹的游玩，更是拜访阔别半年的姐姐。上海堡垒上映并被观众唾弃后不久，我定下了行程，去上海吧。</p>
-<figure data-type="image" tabindex="1"><img src="https://necker14.github.io/post-images/1567941836911.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>9月1日出发，6日回家，短短的行程</p>
-</blockquote>
-<figure data-type="image" tabindex="2"><img src="https://necker14.github.io/post-images/1567943470877.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>午间的车库</p>
-</blockquote>
-<p>因为是晚餐点飞机，从家到双流机场车程1小时左右，也行中途有堵车，吃过饭早早出发。我开车，妈妈送我到安检口</p>
-<figure data-type="image" tabindex="3"><img src="https://necker14.github.io/post-images/1567942228217.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>等待检票的我</p>
-</blockquote>
-<figure data-type="image" tabindex="4"><img src="https://necker14.github.io/post-images/1567942285356.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>提前选好了靠窗座位</p>
-</blockquote>
-<figure data-type="image" tabindex="5"><img src="https://necker14.github.io/post-images/1567942291412.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>很开心当天天气很好</p>
-</blockquote>
-<p><img src="https://necker14.github.io/post-images/1567942296652.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567942337542.jpg" alt="" loading="lazy"></p>
-<blockquote>
-<p>日落的晚霞照在机窗</p>
-</blockquote>
-<figure data-type="image" tabindex="6"><img src="https://necker14.github.io/post-images/1567942342097.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>成都出发的时候在下着大雨</p>
-</blockquote>
-<figure data-type="image" tabindex="7"><img src="https://necker14.github.io/post-images/1567944243390.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>好用的小东西</p>
-</blockquote>
-<figure data-type="image" tabindex="8"><img src="https://necker14.github.io/post-images/1567944261595.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>小憩</p>
-</blockquote>
-<p>飞去的航空公司是南方航空，订的是经济舱，但是娱乐屏幕，飞机耳机插口都有。我没有使用飞机提供的影音来打发时间。听着Walkman，用Bose降噪耳机好好睡了一觉。回来的国航则是体验大打折扣，我飞回来那天因为天气原因误点了1小时，但是飞机没有在廊桥登机，上海虹桥机场国内出发是在T2航站楼，但是我们等级时坐摆渡车足足坐了40分钟，从T2坐到T1才上飞机，并且飞机已经使用了8年，我的位置不能调座椅，快2小时的飞行体验非常糟糕。这里说个题外话，前段时间听说很多航空公司削减甚至砍掉了飞机餐，也可能是因为我两班飞机都订到了饭点，飞机餐还是一样不少。南方航空是鱼肉米饭配凉花生，面包，还有酸奶。国航是鸡肉米饭配面包加安佳稀奶油，比较稀奇的是饮品居然是龟苓膏。</p>
-<figure data-type="image" tabindex="9"><img src="https://necker14.github.io/post-images/1567944220504.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>夜晚的上海延安高架</p>
-</blockquote>
-<p>因为姐姐家在西藏南路，开车到豫园10分钟车程，所以第一站在豫园。<br>
-<img src="https://necker14.github.io/post-images/1567943625131.jpg" alt="" loading="lazy"></p>
-<blockquote>
-<p>西藏南路</p>
-</blockquote>
-<figure data-type="image" tabindex="10"><img src="https://necker14.github.io/post-images/1567943866937.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>看窗外</p>
-</blockquote>
-<p>豫园旁边是城隍庙，但是城隍庙没有去的价值，周边很多卖“上海特产”的地儿，唯一推荐可以去的是南湘馒头店，灌汤包很不错。去豫园需要买门票。</p>
-<figure data-type="image" tabindex="11"><img src="https://necker14.github.io/post-images/1567944072102.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>在小吃街门口</p>
-</blockquote>
-<figure data-type="image" tabindex="12"><img src="https://necker14.github.io/post-images/1567944366568.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>景中有景</p>
-</blockquote>
-<figure data-type="image" tabindex="13"><img src="https://necker14.github.io/post-images/1567944389838.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>前朝气质，苏式园林的斗拱</p>
-</blockquote>
-<figure data-type="image" tabindex="14"><img src="https://necker14.github.io/post-images/1567944435527.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>古典、石库门、现代共存</p>
-</blockquote>
-<figure data-type="image" tabindex="15"><img src="https://necker14.github.io/post-images/1567944497612.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>巧妙的分离</p>
-</blockquote>
-<figure data-type="image" tabindex="16"><img src="https://necker14.github.io/post-images/1567944546924.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>池中游鱼都肥硕无比</p>
-</blockquote>
-<figure data-type="image" tabindex="17"><img src="https://necker14.github.io/post-images/1567944581094.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>幽寻，真是个好名字</p>
-</blockquote>
-<p><img src="https://necker14.github.io/post-images/1567944708242.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567944763320.jpg" alt="" loading="lazy"></p>
-<blockquote>
-<p>温和软糯</p>
-</blockquote>
-<figure data-type="image" tabindex="18"><img src="https://necker14.github.io/post-images/1567944873159.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>巷弄</p>
-</blockquote>
-<figure data-type="image" tabindex="19"><img src="https://necker14.github.io/post-images/1567944931336.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>使用黑白调色更能突兀历史感</p>
-</blockquote>
-<figure data-type="image" tabindex="20"><img src="https://necker14.github.io/post-images/1567944971108.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>我生活的周围已经很少有这样的建筑存在，这只是上海石库门文化的冰山一角</p>
-</blockquote>
-<figure data-type="image" tabindex="21"><img src="https://necker14.github.io/post-images/1567945134587.jpeg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>这些建筑在托儿所旁边，我只是顺道拍摄了几张照片</p>
-</blockquote>
-<p><img src="https://necker14.github.io/post-images/1567945576926.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567946199422.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567946337280.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567948147885.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567948162665.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567948170962.jpg" alt="" loading="lazy"></p>
-<blockquote>
-<p>新天地</p>
-</blockquote>
-<p><img src="https://necker14.github.io/post-images/1567948188284.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567948196629.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567948204868.jpg" alt="" loading="lazy"></p>
-<p>上海最高的上海中心大厦有一个朵云书店</p>
-<p><img src="https://necker14.github.io/post-images/1567948254608.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567948263751.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567948270361.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567948296109.jpg" alt="" loading="lazy"></p>
-<blockquote>
-<p>正好放晴</p>
-</blockquote>
-<p>接下来是一些夜景</p>
-<p><img src="https://necker14.github.io/post-images/1567948357658.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567948363794.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567948371162.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567948377201.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567948384840.jpg" alt="" loading="lazy"></p>
-<p>还有一个行程安排是去西湖，坐高铁只需要1小时</p>
-<figure data-type="image" tabindex="22"><img src="https://necker14.github.io/post-images/1567946345616.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>接下来去杭州</p>
-</blockquote>
-<figure data-type="image" tabindex="23"><img src="https://necker14.github.io/post-images/1567946372324.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>西湖岸上一角</p>
-</blockquote>
-<figure data-type="image" tabindex="24"><img src="https://necker14.github.io/post-images/1567946416039.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>坐上了小船</p>
-</blockquote>
-<p><img src="https://necker14.github.io/post-images/1567946452898.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567946459149.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567946485268.jpg" alt="" loading="lazy"></p>
-<p>我们坐上观光车，去雷峰塔了。</p>
-<figure data-type="image" tabindex="25"><img src="https://necker14.github.io/post-images/1567947444425.jpg" alt="" loading="lazy"></figure>
-<blockquote>
-<p>奇妙的公共汽车</p>
-</blockquote>
-<p><img src="https://necker14.github.io/post-images/1567947465898.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567947472863.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567947482666.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567947489124.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567947514589.jpg" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1567948068628.jpg" alt="" loading="lazy"></p>
-<blockquote>
-<p>去旅行这几天全在下雨</p>
-</blockquote>
-<p>我一直相信照片和影像能够表达的情感更多，但是文字更有留白的效果。我之前在旅途中拍摄的影像很多都摇摇晃晃，就算是手机有光学防抖也无济于事，以后有计划会购买一个DJI手机云台。</p>
-<p>这个暑假我都在家寡寡欲欢，但开学前的这个旅行让我整个人都放松无比，灵魂都在快活地颤抖：“就是这个感觉！”</p>
-<p>远离父母的大学新生活，一切都是新的。这是我想要的。</p>
 ]]></content>
     </entry>
 </feed>
