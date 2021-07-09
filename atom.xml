@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://necker14.github.io</id>
     <title>Kevin的自留地</title>
-    <updated>2021-03-27T09:29:16.378Z</updated>
+    <updated>2021-07-09T08:19:41.552Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://necker14.github.io"/>
     <link rel="self" href="https://necker14.github.io/atom.xml"/>
@@ -11,6 +11,15 @@
     <logo>https://necker14.github.io/images/avatar.png</logo>
     <icon>https://necker14.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Kevin的自留地</rights>
+    <entry>
+        <title type="html"><![CDATA[飞机上的7点半]]></title>
+        <id>https://necker14.github.io/post/fei-ji-shang-de-7-dian-ban/</id>
+        <link href="https://necker14.github.io/post/fei-ji-shang-de-7-dian-ban/">
+        </link>
+        <updated>2021-07-09T08:15:08.000Z</updated>
+        <content type="html"><![CDATA[<p>在这特殊的日子，今天有很多次人生第一次，在这一万米高空之上，一个够不到手机信号，上厕所自由活动都需要按时按规完成的地方，我竟然在一片噪声中找到了过去几年我一直在努力寻找的东西。可能是我神经过敏，可能是我真的很缺爱，也很有可能是我受不了孤单了。现在我挺享受与人交流，他人会礼貌，也会冷漠，但是我的起点是好奇和享受的，这几年人们变得偏激和独立，有时候会觉得活在当下挺倒霉的，原因无他，我不像其他人打不过就加入，习惯性的质疑态度和弱社交属性某种意义上算是救了我。可事实是，现代的人们相互之间的交流越来越困难，无论线上线下，至少在我身边的同龄人是如此，我有时候都经常会想养一个小宠物，后来想想和我想找人说话交流其实是一样的，主要还是觉得孤单了。今天还是定了个7点的飞机，我从上次从成都飞往上海后，看到了大概是这辈子看到的最美的日落，就对今天这趟旅程无比期待～虽然今天的云层比较厚，远不及那天晚上的日落带来的震撼，但是也很美丽啦～回到想写这篇文章的初衷，就是我在想啊～因为我是一个很容易失望的人，像我这样的人，是很难讨好别人但是很容易被讨好的人，所以我真的很担忧自己的另一半能不能找得到，我是指双方都很满意的……有时候会觉得是痴人说梦，要不然安慰自己一下，单身其实也很好。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[亲爱的 2880]]></title>
         <id>https://necker14.github.io/post/qin-ai-de-2880/</id>
@@ -591,83 +600,6 @@ https://www.right.com.cn/FORUM/thread-4017726-1-1.html</p>
 测试成功</p>
 <hr>
 <p>至此，本次记录完成</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于Linux的学习记录_01]]></title>
-        <id>https://necker14.github.io/post/guan-yu-linux-de-xue-xi-ji-lu-_01/</id>
-        <link href="https://necker14.github.io/post/guan-yu-linux-de-xue-xi-ji-lu-_01/">
-        </link>
-        <updated>2020-02-03T03:51:47.000Z</updated>
-        <content type="html"><![CDATA[<p><strong>这是Kevin的计算机学习博客记录</strong></p>
-<p>本次目标：</p>
-<ol>
-<li>建立两个用户组group1和group2，以及三个用户dennis、daniel、abigale，并且将前2个用户分配在group1用户组下，后一个分配在group2用户组下。</li>
-<li>创建一个whzy102.txt文件   将该文件的存取属性设置为对所有用户可读，可写和不可执行。</li>
-<li>查找/bin目录中所有字母v开头的文件,且把定位结果重定向到文件wang2中。</li>
-</ol>
-<p>进行操作的环境为：<br>
-<em>·Windows 10 专业版<br>
-·VMware Workstation Pro 15.5正式版<br>
-·centos6.5正式发行版</em></p>
-<hr>
-<p>第一项：<br>
-<em>实现第一项我们可能用到的Linux指令有：groupadd、useradd、passwd</em></p>
-<p><strong>·首先，我们先建立两个用户组group1和group2</strong></p>
-<p>指令为：<br>
-<code>groupadd group1</code><br>
-<code>groupadd group2</code><br>
-<img src="https://necker14.github.io/post-images/1580702511895.png" alt="" loading="lazy"></p>
-<p><strong>·接着，我们将创建三个用户dennis、daniel、abigale，并按要求将前2个用户分配在group1用户组下，后一个分配在group2用户组下</strong></p>
-<p>指令为:<br>
-<code>useradd -g group1 dennis</code><br>
-<code>useradd -g group1 daniel</code><br>
-<code>useradd -g group2 abigale</code><br>
-<img src="https://necker14.github.io/post-images/1580702846051.png" alt="" loading="lazy"></p>
-<p><em>P.S. 指令说明:</em><br>
-<code>groupadd 组名</code>  创建一个用户组<br>
-<code>useradd -g 组名 用户名</code> 在一个现有组里添加一个用户</p>
-<p><strong>·但是我们不知道我们是否成功了，输入完指令Linux系统也没有任何的提示，我们可以使用id指令来检查我们的用户，语法为</strong> <code>id 用户名</code></p>
-<p>指令为：<br>
-<code>id dennis</code><br>
-<code>id daniel</code><br>
-<code>id abigale</code><br>
-<img src="https://necker14.github.io/post-images/1580703439611.png" alt="" loading="lazy"></p>
-<p>至此，第一项就完成啦</p>
-<hr>
-<p>第二项：<br>
-<em>实现第二项我们可能用到的Linux指令有：touch、chmod</em></p>
-<p><strong>·首先，我们先创建一个whzy102.txt文件，使用ll指令查看创建是否成功</strong></p>
-<p>指令：<br>
-<code>touch whzy102.txt</code><br>
-<code>ll</code><br>
-<img src="https://necker14.github.io/post-images/1580706474127.png" alt="" loading="lazy"></p>
-<p><strong>·然后对whzy102.txt文件进行权限设置,存取属性设置为对所有用户可读，可写和不可执行,用ll指令检查是否修改成功</strong></p>
-<p>指令：<br>
-<strong>chmod a=rw whzy102.txt</strong><br>
-<img src="https://necker14.github.io/post-images/1580706655500.png" alt="" loading="lazy"></p>
-<p><em>P.S. 指令说明:</em><br>
-<code>touch 文件名</code> 在当前目录下创建一个文件<br>
-<code>chmod a=rw 文件名</code> 为XX文件开放所有人的读写权限</p>
-<p>至此，第二项就完成啦</p>
-<hr>
-<p>第三项：<br>
-<em>实现第三项我们可能用到的Linux指令有：find、|、&gt;</em></p>
-<p><strong>·首先，我们使用find指令查找/bin目录下的所有V开头文件</strong></p>
-<p>指令：<br>
-<code>find /bin/ -name &quot;v*&quot;</code><br>
-<img src="https://necker14.github.io/post-images/1580708167902.png" alt="" loading="lazy"></p>
-<p><em>将输出重定向到wang2中，并通过vim检查是否成功</em><br>
-指令：<br>
-<code>find /bin/ -name &quot;v*&quot; &gt;wang2.txt</code><br>
-<code>vim wang2.txt</code><br>
-<img src="https://necker14.github.io/post-images/1580708272933.png" alt="" loading="lazy"><br>
-<img src="https://necker14.github.io/post-images/1580708307068.png" alt="" loading="lazy"></p>
-<p><em>P.S.指令说明：</em><br>
-<code>find /bin/ -name &quot;v*&quot;</code> 在/bin目录下通过文件名寻找所有小写v开头的文件<br>
-<code>find /bin/ -name &quot;v*&quot; &gt;wang2.txt</code> 将上指令的列表结果输出重定向到wang2.txt文件当中<br>
-<code>vim wang2.txt</code> 通过vim编辑器编写wang2.txt文件</p>
-<p>至此，第三项就完成啦</p>
 ]]></content>
     </entry>
 </feed>
